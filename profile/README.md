@@ -1,7 +1,6 @@
-# Play with Robot
 _UC Berkeley EE C206/106A 2022 Fall Group 5' final project_
 
-## Teach a Robot to Do Maths
+# Teach a Robot to Do Maths
 
 The project aims to utilise the Sawyer robotic arm to solve mathematical problems. 
 The Sawyer robotic arm is expected to read the handwritten mathematical problems on
@@ -30,16 +29,6 @@ written by it comes from [FormulaRec](https://github.com/PlayWithRobot-Berkeley/
 
 ## How to Deploy
 
-Both the repository contain individual packages instead of **not** ROS workspace.
-Hence, it would be advisable to **first create a workspace**, 
-clone both repositories into the `src` directory and then `catkin_make`, so that
-both packages can reside in the same workspace, making the life easier (and neater). 
-
-Since the Sawyer robotic arm are to be used as well, do not forget to include the
-`intera.sh` as well. 
-
-In summary, basicall you need to: 
-
 ```sh
 mkdir final_project # the workspace
 cd final_project
@@ -47,9 +36,6 @@ mkdir src
 cd src
 git clone https://github.com/PlayWithRobot-Berkeley/FormulaRec.git
 git clone https://github.com/PlayWithRobot-Berkeley/PathPlanning.git
-
-# THEN FOLLOW THE README in FormulaRec to complete the CV setup
-
 cd .. # back to final_project
 ln -s /opt/ros/eecsbot_ws/intera.sh .
 catkin_make
@@ -93,6 +79,6 @@ gives a detailed instructions and are strongly recommended to go through.
     rosrun path_planning cartesian_test.py
     ```
 
-## Bingo! 
+# Bingo! 
 
 <img width='40%' src='https://github.com/PlayWithRobot-Berkeley/.github/blob/main/Bingo.png'/>
